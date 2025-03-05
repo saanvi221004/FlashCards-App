@@ -1,0 +1,216 @@
+/* General Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f7fa;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Center Alignment */
+.container {
+    text-align: center;
+    width: 90%;
+    max-width: 600px;
+    margin: auto;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+/* Headings */
+h1 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* List Styling */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.card {
+    background-color: #e6f7ff;
+    border: 1px solid #b3d8ff;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    text-align: left;
+}
+
+/* Buttons */
+.btn {
+    text-decoration: none;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+/* Specific Button Colors */
+.add-btn {
+    background-color: #4caf50;
+    color: #fff;
+}
+
+.mark-btn {
+    background-color: #f44336;
+    color: #fff;
+}
+
+.submit-btn {
+    background-color: #2196f3;
+    color: #fff;
+}
+
+.back-btn {
+    background-color: #ff9800;
+    color: #fff;
+}
+
+/* Form Styling */
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: left;
+}
+
+input {
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+/* Add Page Specific Styling */
+.add-container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    margin: auto;
+}
+
+.add-form label {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+    display: block;
+    color: #333;
+}
+
+.add-form input {
+    font-size: 1.1em;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.add-form input:focus {
+    border-color: #2196f3;
+}
+
+.add-form .submit-btn {
+    font-size: 1.2em;
+    padding: 12px 20px;
+    background-color: #28a745;
+    color: white;
+    width: 100%;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.add-form .submit-btn:hover {
+    background-color: #218838;
+}
+
+.add-form input::placeholder {
+    color: #aaa;
+    font-size: 0.9em;
+}
+
+/* Back Button Styling */
+.back-btn {
+    margin-top: 15px;
+    display: block;
+    text-align: center;
+    font-size: 1em;
+    padding: 10px 15px;
+    background-color: #ff9800;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.back-btn:hover {
+    background-color: #e68900;
+}
+/* Welcome Page Styling */
+.welcome-container {
+    text-align: center;
+    padding: 50px;
+    margin: auto;
+    max-width: 600px;
+    background: linear-gradient(to bottom right, #6a11cb, #2575fc);
+    color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.welcome-container h1 {
+    font-size: 3em;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.welcome-container p {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+}
+
+.enter-btn {
+    font-size: 1.2em;
+    padding: 15px 25px;
+    background: #ff9800;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.enter-btn:hover {
+    background: #e68900;
+    transform: scale(1.1);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flashcards App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Flashcards</h1>
+        <a href="/add" class="btn add-btn">Add New Flashcard</a>
+        <ul>
+            {% for card in cards %}
+            <li class="card">
+                <p><strong>Q:</strong> {{ card[1] }}</p>
+                <p><strong>A:</strong> {{ card[2] }}</p>
+                <p><strong>Category:</strong> {{ card[3] }}</p>
+                <a href="/mark/{{ card[0] }}" class="btn mark-btn">Mark as Learned</a>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+</body>
+</html>
